@@ -25,10 +25,10 @@ const App = () => {
         <Programs/>
         <Title subTitle='gallery' title='Campus Memories'/>
         <Gallery/>
-        <Title subTitle='Testimonials' title='Students View'/>
-        <Testimonials/>
         <Title subTitle='contact us' title='Get In Touch'/>
         <Contact/>
+        <Title subTitle='Testimonials' title='Students View'/>
+        <Testimonials/>
         <Footer/>
       </div>
       <Videoplayer playState = {playState} setPlayState = {setPlayState}/>
