@@ -76,7 +76,7 @@
     margin-top: 5px;
     resize: none;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px #ff0000;
+    
 }
 
 .contact-col span {
@@ -95,3 +95,4 @@
     box-shadow: none !important;
     border: none !important;
 }
+
