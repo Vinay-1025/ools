@@ -6,6 +6,7 @@ import out from '../../assets/out_icon.png';
 import leave from '../../assets/leave_icon.png';
 import query from '../../assets/query_icon.png';
 import arrow from '../../assets/dark-arrow.png';
+import { Link } from 'react-scroll';
 
 const Programs = ({ setOpenModel, setOpenModell }) => {
     return (
@@ -34,7 +35,7 @@ const Programs = ({ setOpenModel, setOpenModell }) => {
                     <img src={query} alt="" />
                     <h1>QUERIES</h1>
                     <p>Contact here</p>
-                    <button className='btn'>Commit <img src={arrow} alt="" className='imgr' /></button>
+                    <Link to='contact' smooth={true} offset={-230} duration={500}><button className='btn'>Commit <img src={arrow} alt="" className='imgr' /></button></Link>
                 </div>
             </div>
         </div>

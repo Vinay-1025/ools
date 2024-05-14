@@ -36,6 +36,12 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  transition: 1s smooth;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #333;
+  transition: 1s smooth;
 }
 
 .btn img {

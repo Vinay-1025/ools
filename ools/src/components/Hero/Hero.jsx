@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 import dark_arrow from '../../assets/dark-arrow.png'
+import { Link } from 'react-scroll'
 
 const Hero = () => {
     return (
@@ -10,7 +11,7 @@ const Hero = () => {
             <p>
                 ifbiu4tcngiurhiughfgiruhncmhogihrih
             </p>
-            <button className='btn'>View<img src={dark_arrow}  alt="arrow"/></button>
+            <Link to='programs' smooth={true} offset={-230} duration={500}><button className='btn'>View<img src={dark_arrow}  alt="arrow"/></button></Link>
         </div>
     </div>
     )

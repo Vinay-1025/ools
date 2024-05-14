@@ -23,9 +23,9 @@ const Leavemodel = ({ openModell, setOpenModell }) => {
                 <div className="body">
                     <p>This is the outing form for the students.</p>
                     <form>
-                    <div className="emer">
-                        <input type='checkbox' name='emergency'/>
-                    </div>
+                        <div className="emer">
+                            <input type='checkbox' name='emergency'/>
+                        </div>
 
                         <label>Your Name</label>
                         <input type='text' name='name' placeholder='Enter Your name' required />
@@ -35,9 +35,9 @@ const Leavemodel = ({ openModell, setOpenModell }) => {
 
                         <label>In Date</label>
                         <input type='date' name='indate' required />
+
                         <label>Reason for Leave</label>
                         <textarea name='reason' rows='2' placeholder='Enter your reason' required />
-
                     </form>
                 </div>
                 <div className="footer">

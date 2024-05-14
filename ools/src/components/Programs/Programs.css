@@ -10,8 +10,8 @@
     width: 100%;
     border-radius: 20px;
     display: inline-block;
-    border: 1px solid #e02121;
-    box-shadow: 0 0 10px #e02121;
+    border: 1px solid #000000;
+    box-shadow: 0 0 20px #000000;
 }
 
 .program {
