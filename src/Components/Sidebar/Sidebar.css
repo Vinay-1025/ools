@@ -1,0 +1,84 @@
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    height: 94vh;
+    transition: width 0.5s ease, padding 0.5s ease;
+}
+
+.logo {
+    text-align: center;
+    padding-bottom: 10px;
+    color: #506E55;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #273744;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.logo-icon {
+    font-size: 1.4rem;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-list .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    color: #273744;
+}
+
+.menu-list .item:hover {
+    background: #fff;
+    color: #212EA0;
+}
+
+.menu-list .item.active {
+    background: #fff;
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color: #212EA0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Styles for hiding text when only icons are shown */
+.menu.icons-only .menu-list .item span {
+    display: none;
+}
+
+.logo img {
+    width: 35px;
+    margin-right: 60px;
+}
+
+.menu.icons-only .logo h2 {
+    display: none;
+}
+
+.hidden-text {
+    visibility: hidden;
+}
+
+/* Decrease padding and width when icons-only */
+.menu.icons-only {
+    padding: 0px; /* Adjust as needed */
+    width: 40px; /* Adjust as needed */
+}
