@@ -1,19 +1,18 @@
 import React from 'react';
 import './App.css';
-import Sidebar from './Components/Sidebar/Sidebar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Content from './Components/Content/Content';
-import Profile from './Components/Profile/Profile';
-
+import Menu from './Components/Menu/Menu';
 
 const App = () => {
-  return (
-    <div className='dashboard'>
-      <Sidebar />
-      <div className="dashboard-content">
-        <Content />
-      </div>
-    </div>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<Content />} />
+                <Route path="/menu/*" element={<Menu />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

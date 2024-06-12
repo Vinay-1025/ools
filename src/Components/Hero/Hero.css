@@ -1,6 +1,6 @@
 .hero {
     width: 100%;
-    min-height: 100vh;
+    min-height: 90%;
     background: linear-gradient(rgba(58, 0, 0, 0.3),rgba(0, 8, 58, 0.3)), url('../../assets/rgukt.jpg');
     background-repeat: no-repeat;
     background-position: center;

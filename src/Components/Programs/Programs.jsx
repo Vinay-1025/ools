@@ -17,7 +17,7 @@ const Programs = ({ setOpenModel, setOpenModell }) => {
                     <img src={out} alt="" />
                     <h1>OUTING</h1>
                     <p>Apply Outing</p>
-                    <button className='btn' onClick={() => setOpenModel(true)}>Apply <img src={arrow} alt="" className='imgr' /></button>
+                    <button className='butn' onClick={() => setOpenModel(true)}>Apply <img src={arrow} alt="" className='imgr' /></button>
                 </div>
             </div>
             <div className="program">
@@ -26,7 +26,7 @@ const Programs = ({ setOpenModel, setOpenModell }) => {
                     <img src={leave} alt="" />
                     <h1>LEAVE</h1>
                     <p>Apply Leave</p>
-                    <button className='btn' onClick={() => setOpenModell(true)}>Apply <img src={arrow} alt="" className='imgr' /></button>
+                    <button className='butn' onClick={() => setOpenModell(true)}>Apply <img src={arrow} alt="" className='imgr' /></button>
                 </div>
             </div>
             <div className="program">
@@ -35,7 +35,7 @@ const Programs = ({ setOpenModel, setOpenModell }) => {
                     <img src={query} alt="" />
                     <h1>QUERIES</h1>
                     <p>Contact here</p>
-                    <Link to='contact' smooth={true} offset={-230} duration={500}><button className='btn'>Commit <img src={arrow} alt="" className='imgr' /></button></Link>
+                    <Link to='contact' smooth={true} offset={-230} duration={500}><button className='butn'>Commit <img src={arrow} alt="" className='imgr' /></button></Link>
                 </div>
             </div>
         </div>

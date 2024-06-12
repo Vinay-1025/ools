@@ -17,8 +17,8 @@ const Testimonials = () => {
     }, [tx]);
 
     const slideForward = () => {
-        if (tx > -50) {
-            setTx(prevTx => prevTx - 25);
+        if (tx > -65) {
+            setTx(prevTx => prevTx - 15);
         } else {
             setTx(0);
         }
@@ -26,7 +26,7 @@ const Testimonials = () => {
 
     const slideBackward = () => {
         if (tx < 0) {
-            setTx(prevTx => prevTx + 25);
+            setTx(prevTx => prevTx + 15);
         } else {
             setTx(0);
         }
@@ -87,6 +87,34 @@ const Testimonials = () => {
                                 <div>
                                     <h3>Vinay Sriram Gavara</h3>
                                     <span>Frontend-Dev</span>
+                                </div>
+                            </div>
+                            <p>
+                                kdiugyfxbgfnhmpswhr fx g fxuvwbkqdhifxvsquygfx qwbgiuxf vj
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="slide">
+                            <div className="user-info">
+                                <img src={user1} alt="" />
+                                <div>
+                                    <h3>Shafia Uzma</h3>
+                                    <span>Full Stack DEv</span>
+                                </div>
+                            </div>
+                            <p>
+                                kdiugyfxbgfnhmpswhr fx g fxuvwbkqdhifxvsquygfx qwbgiuxf vj
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                    <div className="slide">
+                            <div className="user-info">
+                                <img src={user1} alt="" />
+                                <div>
+                                    <h3>G Chakri</h3>
+                                    <span>Full Stack DEv</span>
                                 </div>
                             </div>
                             <p>

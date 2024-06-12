@@ -1,65 +1,61 @@
 import React from 'react';
 import './Profile.css';
-import ProfileHeader from '../ProfileHeader/ProfileHeader';
-import pro from '../../assets/appadam.png'
-import { BiBook } from 'react-icons/bi';
-
-
-const courses = [
-    {
-        title: 'English',
-        duration: '2hrs',
-        icon: <BiBook />,
-    },
-    {
-        title: 'Java',
-        duration: '2hrs',
-        icon: <BiBook />,
-    },
-    {
-        title: 'React.Js',
-        duration: '2hrs',
-        icon: <BiBook />,
-    },
-];
+import ContentHeader from '../ContentHeader/ContentHeader';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import profile from '../../assets/fav_icon.png';
+import { BiEdit, BiEditAlt, BiSolidEditAlt } from 'react-icons/bi';
 
 const Profile = () => {
     return (
-    <div className='profile'>
-        <ProfileHeader />
-
-        <div className='user-profile'>
-            <div className="user-detail">
-                <img src={pro} alt="" />
-                <h3 className="username">
-                    Venky
-                </h3>
-                <span className="profession">Student</span>
-            </div>
-
-            <div className="user-courses">
-                {courses.map((courses) => (
-                    <div className="course">
-                        <div className="course-details">
-                            <div className="course-cover">
-                                {courses.icon}
-                            </div>
-                            <div className="course-name">
-                                <h5 className="title">
-                                    {courses.title}
-                                </h5>
-                                <span className="course-duration">
-                                    {courses.duration}
-                                </span>
-                            </div>
-                        </div>
-                        <div className="action">:</div>
+        <div className="fixed-scroll">
+            <ContentHeader title='Profile'/>
+            <div className="profile-body">
+                <div className="profile-image">
+                    <img src={profile} alt="Profile" />
+                </div>
+                <div className="profile-details">
+                    <div className="detail">
+                        <span className='name-title'>Venkatesh Ganisetti</span>
                     </div>
-                ))}
+                    <div className="detail">
+                        <FontAwesomeIcon icon={faEnvelope} className="pro-icon" />
+                        <span>student@gmail.com</span>
+                    </div>
+                    <div className="detail">
+                        <FontAwesomeIcon icon={faPhone} className="pro-icon" />
+                        <span>+91 6281______9</span>
+                    </div>
+                    <div className="detail">
+                        <FontAwesomeIcon icon={faUser} className="pro-icon" />
+                        <span>3 - Computer Science</span>
+                    </div>
+                </div>
+            <BiSolidEditAlt className='edit'/>
+            </div>
+            <div className="profile-content">
+                <h3>Additional Information</h3>
+                <div className="profile-pro-cards">
+                    <div className="pro-card">
+                        <h4>pro-Card 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec diam eu lorem elementum ullamcorper.</p>
+                    </div>
+                    <div className="pro-card">
+                        <h4>pro-Card 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec diam eu lorem elementum ullamcorper.</p>
+                    </div>
+                    <div className="pro-card">
+                        <h4>pro-Card 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec diam eu lorem elementum ullamcorper.</p>
+                    </div>
+                    <div className="pro-card">
+                        <h4>pro-Card 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec diam eu lorem elementum ullamcorper.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    )
+    );
 }
 
-export default Profile
+export default Profile;
